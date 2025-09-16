@@ -1,0 +1,46 @@
+# MuacoDB - Robots.txt para otimização SEO
+User-agent: *
+Allow: /
+
+# Páginas principais
+Allow: /produto
+Allow: /pricing
+Allow: /docs
+Allow: /api
+Allow: /status
+Allow: /suporte
+Allow: /contacto
+Allow: /ajuda
+
+# Páginas legais
+Allow: /privacidade
+Allow: /termos
+
+# Páginas de autenticação
+Allow: /login
+Allow: /register
+
+# Bloquear páginas administrativas
+Disallow: /admin
+Disallow: /dashboard/admin
+
+# Arquivos importantes
+Sitemap: https://muacodb.vercel.app/sitemap.xml
+
+# Crawl-delay para diferentes bots
+Crawl-delay: 1
+
+# Específico para Google
+User-agent: Googlebot
+Crawl-delay: 0
+Allow: /
+
+# Específico para Bing
+User-agent: Bingbot
+Crawl-delay: 1
+Allow: /
+
+# Específico para Yandex
+User-agent: YandexBot
+Crawl-delay: 2
+Allow: /
